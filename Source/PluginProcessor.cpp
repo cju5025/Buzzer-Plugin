@@ -23,7 +23,7 @@ HardClipperAudioProcessor::HardClipperAudioProcessor()
 #endif
 {
     addParameter(mMixParameter = new AudioParameterFloat("mix", "Mix", 0.f, 1.f, 0.3f));
-    addParameter(mThresholdParameter = new AudioParameterFloat("threshold", "Threshold", 0.f, 0.3f, 0.f));
+    addParameter(mThresholdParameter = new AudioParameterFloat("threshold", "Threshold", 0.01f, 0.1f, 0.f));
 }
 
 HardClipperAudioProcessor::~HardClipperAudioProcessor()
